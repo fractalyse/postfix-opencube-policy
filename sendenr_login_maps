@@ -1,0 +1,12 @@
+[DEFAULT]
+# ldaps://server or ldap://server
+ldap_server = 
+# user bind
+ldap_user =
+# user password
+ldap_password = 
+# search dn
+ldap_search_dn = 
+ldap_filter = (&(mailaliasto={sasl_username}))
+ldap_attr = cn,mailaliasfrom,mailaliasto
+ldap_filter_spoof = (&(mailaliasfrom={sender_mail}))
