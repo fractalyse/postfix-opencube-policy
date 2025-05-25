@@ -7,6 +7,8 @@ ldap_user =
 ldap_password = 
 # search dn
 ldap_search_dn = 
+# for kerberos mapping
+ldap_user_dn = 
 ldap_filter = (&(mailaliasto={sasl_username}))
 ldap_attr = cn,mailaliasfrom,mailaliasto,mail
 ldap_filter_spoof = (&(mailaliasfrom={sender_mail}))
